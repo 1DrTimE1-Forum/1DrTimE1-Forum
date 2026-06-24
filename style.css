@@ -1,0 +1,187 @@
+/* index.html */
+#logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    width: 350px;
+}
+#hemtopbox {
+    position: absolute;
+    background-color: #434fd8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 100px;
+}
+#hembottombox {
+    position: absolute;
+    background-color: #27282B;
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 600px;
+    width: 1200px;
+    z-index: -10;
+}
+#hembutton {
+    position: absolute;
+    color: #fff;
+    background-color: #27282B;
+    border-color: #27282B;
+    font-size: 22px;
+    height: 50px;
+    width: 100px;
+    top: 47%; 
+    left: 380px;
+    z-index: 10;
+}
+#överklaganbutton {
+    position: absolute;
+    color: #fff;
+    background-color: #27282B;
+    font-size: 22px;
+    height: 50px;
+    width: 17   0px;
+    top: 47%; 
+    left: 510px;
+    z-index: 10;
+}
+/* överklagan.html */
+#forumwrapper {
+    position: relative;
+    max-width: 1200px;
+    top: 515px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #c9c9d1;
+}
+
+#breadcrumb {
+    color: #8b8b96;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+#breadcrumb span {
+    color: #fff;
+    font-weight: 600;
+}
+#formbox {
+    background-color: #27282B;
+    border: 1px solid #2c2d31;
+    padding: 36px 40px 40px 40px;
+}
+.introtext {
+    color: #9a9aa3;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+.introtext.italic {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.introtext strong {
+    color: #c9c9d1;
+}
+.formgroup {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    column-gap: 40px;
+    padding: 22px 0;
+    border-bottom: 1px solid #2c2d31;
+}
+.label-col label {
+    color: #c9c9d1;
+    font-size: 15px;
+    display: block;
+}
+.required {
+    color: #6f6f78;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+.input-col textarea {
+    width: 100%;
+    min-height: 44px;
+    background-color: #1E1E20;
+    border: 1px solid #3a3b40;
+    border-radius: 4px;
+    color: #e4e4e7;
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+.input-col textarea:focus {
+    outline: none;
+    border-color: #6f5fd8;
+}
+.hint {
+    display: block;
+    color: #6f6f78;
+    font-size: 13px;
+    margin-top: 6px;
+}
+.radiogroup .input-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 4px;
+}
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #c9c9d1;
+    cursor: pointer;
+}
+.radio input[type="radio"] {
+    accent-color: #6f5fd8;
+    width: 16px;
+    height: 16px;
+}
+.warning {
+    color: #e08a8a;
+    font-style: italic;
+    font-size: 14px;
+    margin: 26px 0 22px 0;
+}
+#submitBtn {
+    background-color: #4a3d8f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 26px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+#submitBtn:hover {
+    background-color: #5b4cb0;
+}
+#submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#formStatus {
+    margin-top: 14px;
+    font-size: 14px;
+}
+#formStatus.success { color: #7fd99b; }
+#formStatus.error { color: #e08a8a; }
+
+@media (max-width: 800px) {
+    .formgroup {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}
