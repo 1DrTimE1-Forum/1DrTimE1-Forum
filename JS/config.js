@@ -1,1 +1,1 @@
-const ÖVERKLAGNINGS_WEBHOOK = "https://discord.com/api/webhooks/1518234004187516938/W2QYjx5SeP0yl79JK-kw0eiCeKaIwuhjOZJ4Xu36IXR8l02exWR8JvvGVvF2d7TORoOP";
+const ÖVERKLAGNINGS_WEBHOOK = "https://discord.com/api/webhooks/1519357685982560407/mrGnsp6Z4jRMq0cL_psiaTm9AqV-ht5im-6YYk-_Lg6nmdeO2QwORWrh34FUlpHhWNmQ";
