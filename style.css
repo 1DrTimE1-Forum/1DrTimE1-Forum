@@ -1,3 +1,6 @@
+body {
+    background-color: #555555;
+}
 /* index.html */
 #logo {
     position: absolute;
@@ -44,9 +47,20 @@
     background-color: #27282B;
     font-size: 22px;
     height: 50px;
-    width: 17   0px;
+    width: 170px;
     top: 47%; 
     left: 510px;
+    z-index: 10;
+}
+#staffansökanbutton {
+    position: absolute;
+    color: #fff;
+    background-color: #27282B;
+    font-size: 22px;
+    height: 50px;
+    width: 200px;
+    top: 47%; 
+    left: 710px;
     z-index: 10;
 }
 /* överklagan.html */
