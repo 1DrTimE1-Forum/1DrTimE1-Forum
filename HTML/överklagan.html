@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1DrTimE1 Forum | Överklagan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <img src="images/logo.png" id="logo">
+    <img src="/images/logo.png" id="logo">
     <div id="hemtopbox"></div>
-    <div><a href="index.html"><button id="hembutton">HEM</button></a></div>
+    <div><a href="/index.html"><button id="hembutton">HEM</button></a></div>
     <div><a href="överklagan.html"><button id="överklaganbutton">ÖVERKLAGAN</button></a></div>
     <div id="forumwrapper">
         <div id="formbox">
-            <p class="introtext">
-                Permanenta avstängningar har som syfte att vara permanenta. Därav kan man <em>inte</em> räkna med att få en sådan avstängning hävd.<br>
+            <p class="introtext">Avstängningar har som syfte att vara permanenta. Därav kan man <em>inte</em> räkna med att få en sådan avstängning hävd.<br>
                 Men för dom som vill överklaga en sådan typ av avstängning är det här det ska ske.
             </p>
-            <p class="introtext italic">
-                Notera att detta är enbart för permanenta avstängningar. Ifall det är en temporär avstängning, klicka <strong>här</strong>
-            </p>
+            <p class="introtext italic">Notera att detta är enbart för avstängningar. Ifall det är ett annat ärende ta det under en annan kategori.</p>
 
             <form id="appealForm">
                 <div class="formgroup">
@@ -77,14 +73,14 @@
                     </div>
                 </div>
 
-                <p class="warning">Posta enbart en överklagan och redigera den om du vill ändra något. Postar du flera kommer istället alla överklagningar bli nekade.</p>
+                <p class="warning">Posta enbart en överklagan. Postar du flera kommer istället alla överklagningar bli nekade.</p>
 
                 <button type="submit" id="submitBtn">Submit</button>
                 <p id="formStatus"></p>
             </form>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="/JS/config.js"></script>
+    <script src="/JS/script_överklagan.js"></script>
 </body>
 </html>

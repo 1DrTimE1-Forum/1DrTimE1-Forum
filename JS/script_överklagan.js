@@ -1,5 +1,5 @@
 // Klistra in din Discord webhook-URL här mellan citattecknen.
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1518234004187516938/W2QYjx5SeP0yl79JK-kw0eiCeKaIwuhjOZJ4Xu36IXR8l02exWR8JvvGVvF2d7TORoOP";
+const WEBHOOK_URL = ÖVERKLAGNINGS_WEBHOOK;
 
 const form = document.getElementById("appealForm");
 const status = document.getElementById("formStatus");
