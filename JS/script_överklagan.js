@@ -68,6 +68,6 @@ form.addEventListener("submit", async (e) => {
         console.error(err);
     } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = "Submit";
+        submitBtn.textContent = "Skicka";
     }
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1DrTimE1 Forum | Överklagan</title>
+    <title>1DrTimE1 Forum | Staff Ansökan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,74 +14,85 @@
     <div><a href="staffansökan.html"><button id="staffansökanbutton">STAFF ANSÖKAN</button></a></div>
     <div id="forumwrapper">
         <div id="formbox">
-            <p class="introtext">Avstängningar har som syfte att vara permanenta. Därav kan man <em>inte</em> räkna med att få en sådan avstängning hävd.<br>
-                Men för dom som vill överklaga en sådan typ av avstängning är det här det ska ske.
-            </p>
-            <p class="introtext italic">Notera att detta är enbart för avstängningar. Ifall det är ett annat ärende ta det under en annan kategori.</p>
+            <p class="introtext">Är du intresserad av att bli en del av Staff Teamet på 1DrTimE1? Fyll i ansökan nedan noggrant och ärligt.</p>
+            <p class="introtext italic">Notera att alla fält är obligatoriska. Ofullständiga ansökningar kommer inte att behandlas.</p>
 
-            <form id="appealForm">
-                <div class="formgroup">
-                    <div class="label-col">
-                        <label for="perspektiv">Beskriv vad som hände från ditt perspektiv</label>
-                        <span class="required">Required</span>
-                    </div>
-                    <div class="input-col">
-                        <textarea id="perspektiv" required></textarea>
-                        <span class="hint">Var så detaljerad som möjligt.</span>
-                    </div>
-                </div>
+            <form id="staffForm">
 
                 <div class="formgroup">
                     <div class="label-col">
-                        <label for="felaktig">Varför anser du att åtgärden var felaktig?</label>
+                        <label for="namn">Vad är ditt namn i verkligheten?</label>
                         <span class="required">Required</span>
                     </div>
                     <div class="input-col">
-                        <textarea id="felaktig" required></textarea>
-                        <span class="hint">Förklara varför du tycker att beslutet var fel.</span>
+                        <textarea id="namn" required></textarea>
+                        <span class="hint">Endast förnamn räcker.</span>
                     </div>
                 </div>
 
                 <div class="formgroup">
                     <div class="label-col">
-                        <label for="bevis">Har du bevis som stödjer din överklagan?</label>
-                    </div>
-                    <div class="input-col">
-                        <textarea id="bevis"></textarea>
-                        <span class="hint">Länka till clips, screenshots etc.</span>
-                    </div>
-                </div>
-
-                <div class="formgroup radiogroup">
-                    <div class="label-col">
-                        <label>Har du läst och förstår reglerna?</label>
+                        <label for="discord">Vad är ditt Discord-namn?</label>
                         <span class="required">Required</span>
                     </div>
                     <div class="input-col">
-                        <label class="radio"><input type="radio" name="reglerna" value="Ja" required> Yes</label>
-                        <label class="radio"><input type="radio" name="reglerna" value="Nej" required> No</label>
+                        <textarea id="discord" required></textarea>
+                        <span class="hint">T.ex. 1drtime1</span>
                     </div>
                 </div>
 
-                <div class="formgroup radiogroup">
+                <div class="formgroup">
                     <div class="label-col">
-                        <label>Förstår du att falsk information kan leda till ytterligare åtgärd?</label>
+                        <label for="varfor">Varför ska just du bli staff?</label>
                         <span class="required">Required</span>
                     </div>
                     <div class="input-col">
-                        <label class="radio"><input type="radio" name="falskinfo" value="Ja" required> Yes</label>
-                        <label class="radio"><input type="radio" name="falskinfo" value="Nej" required> No</label>
+                        <textarea id="varfor" required></textarea>
+                        <span class="hint">Berätta om dina egenskaper och varför du passar rollen.</span>
                     </div>
                 </div>
 
-                <p class="warning">Posta enbart en överklagan. Postar du flera kommer istället alla överklagningar bli nekade.</p>
+                <div class="formgroup">
+                    <div class="label-col">
+                        <label for="problem">Vad tycker du inte fungerar på 1DrTimE1?</label>
+                        <span class="required">Required</span>
+                    </div>
+                    <div class="input-col">
+                        <textarea id="problem" required></textarea>
+                        <span class="hint">Var ärlig och konstruktiv.</span>
+                    </div>
+                </div>
 
-                <button type="submit" id="submitBtn">Submit</button>
+                <div class="formgroup">
+                    <div class="label-col">
+                        <label for="losning">Hur ska DU, tillsammans med övriga Staff Teamet, lösa problemet du nämnde ovan?</label>
+                        <span class="required">Required</span>
+                    </div>
+                    <div class="input-col">
+                        <textarea id="losning" required></textarea>
+                        <span class="hint">Beskriv konkreta åtgärder och hur du samarbetar med teamet.</span>
+                    </div>
+                </div>
+
+                <div class="formgroup">
+                    <div class="label-col">
+                        <label for="balans">Hur ska du lägga upp ditt staff-arbete med balans till ditt privata liv?</label>
+                        <span class="required">Required</span>
+                    </div>
+                    <div class="input-col">
+                        <textarea id="balans" required></textarea>
+                        <span class="hint">Berätta hur mycket tid du kan lägga ner och hur du hanterar balansen.</span>
+                    </div>
+                </div>
+
+                <p class="warning">Skicka enbart en ansökan. Flera ansökningar leder till automatisk diskvalificering.</p>
+
+                <button type="submit" id="submitBtn">Skicka Ansökan</button>
                 <p id="formStatus"></p>
             </form>
         </div>
     </div>
     <script src="JS/config.js"></script>
-    <script src="JS/script_överklagan.js"></script>
+    <script src="JS/script_staffansökan.js"></script>
 </body>
 </html>
